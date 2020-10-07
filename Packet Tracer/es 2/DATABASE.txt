@@ -1,0 +1,31 @@
+--FILIALI(ID,Nome,IDLocalità*)
+--CLIENTI(ID,Nome,Cognome,Indirizzo,IDLocalità*,IDFilialeDiAppartenenza*,IDAssicurazione*)
+--LOCALITA(ID,Città,Provincia)
+--TELEFONO(ID,Numero,IDProprietario*)
+--ASSICURAZIONE(ID,FasciaAssicurativa,Tipo,Descrizione,Valore)
+
+--IL DATABASE E' NORMALIZZATO IN TERZA FORMA NORMALE
+--E' STATO COSTRUITO BASANDOSI SUL MODELLO LOGICO RELAZIONALE
+
+--CREARE DUE STORED PROCEDURES:
+
+--TUTTI I CLIENTI DI UNA STESSA FILIALE,CHE APPARTENGONO AD UNA FASCIA ASSICURATIVA
+
+CREATE PROCEDURE FilFasc ( @filiale VARCHAR(30) ,@fa VARCHAR(30)  ) AS
+      (
+	      SELECT C.Nome,C.Cognome
+		  FROM  (CLIENTI AS C INNER JOIN FILIALI AS F ON C.IDLocalità=F.IDFilialeDiAppartenenza)INNER JOIN ASSICURAZIONE AS A ON C.IDAssicurazione = A.ID
+		  WHERE (F.Nome = @filiale) AND (A.FasciaAssicurativa = @fa)
+		  
+	  )
+
+--TUTTI I CLIENTI DI UNA STESSA PROVINCIA,CHE HANNO UN' ASSICURAZIONE MOLTO ALTA
+
+CREATE PROCEDURE FilFasc ( @ValoreConsideratoMoltoAlto INT ) AS
+      {
+	      SELECT C.Nome,C.Cognome,L.Provincia,A.Valore
+		  FROM  (CLIENTI AS C INNER JOIN LOCALITA AS L ON C.IDLocalità=L.ID)INNER JOIN ASSICURAZIONE AS A ON C.IDAssicurazione = A.ID
+		  WHERE A.Valore > @ValoreConsideratoMoltoAlto
+		  GROUP BY(L.Provincia)
+		  
+	  }
