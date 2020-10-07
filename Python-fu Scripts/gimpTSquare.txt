@@ -1,0 +1,102 @@
+import random
+
+img = gimp.Image(1000, 1000, RGB)
+layer = gimp.Layer(img, "Test", 1000, 1000, RGBA_IMAGE, 100, NORMAL_MODE)
+img.add_layer(layer, -1)
+pdb.gimp_image_set_active_layer(img, layer)
+draw = pdb.gimp_image_get_active_drawable(img)
+
+gimp.pdb.gimp_context_set_brush_size(5.0)
+
+def riempiQ(imm,x,y) :
+   res=pdb.gimp_edit_bucket_fill(imm, FG_BUCKET_FILL, NORMAL_MODE, 100, 0,0, x,y)
+   
+def drawQ(imm,p1x,p1y,p2x,p2y,p3x,p3y,p4x,p4y) :
+   pdb.gimp_pencil(draw,4,[p1x,p1y,p2x,p2y])
+   pdb.gimp_pencil(draw,4,[p2x,p2y,p3x,p3y])
+   pdb.gimp_pencil(draw,4,[p3x,p3y,p4x,p4y])
+   pdb.gimp_pencil(draw,4,[p4x,p4y,p1x,p1y])
+
+def Repeat(imm,x,y,p1x,p1y,p2x,p2y,p3x,p3y,p4x,p4y,depth) :
+    if depth == 5 :
+      return 0
+    else :
+      bufx1 = p1x
+      bufx2 = p2x
+      bufx3 = p3x
+      bufx4 = p4x
+      bufy1 = p1y
+      bufy2 = p2y
+      bufy3 = p3y
+      bufy4 = p4y
+      t = (p4x-p1x)/4
+      i = 0
+      while i < 4 :
+        if i == 0:
+          p1x= bufx1 - t
+          p1y= bufy1 - t
+          p2x= bufx1 - t
+          p2y= bufy1 + t
+          p3x= bufx1 + t
+          p3y= bufy1 + t
+          p4x= bufx1 + t
+          p4y= bufy1 - t
+          x= (p4x+p1x)/2
+          y= (p4y+p1y)/2
+        if i == 1:
+          p1x= bufx2 - t
+          p1y= bufy2 - t
+          p2x= bufx2 - t
+          p2y= bufy2 + t
+          p3x= bufx2 + t
+          p3y= bufy2 + t
+          p4x= bufx2 + t
+          p4y= bufy2 - t
+          x= (p4x+p1x)/2
+          y= (p4y+p1y)/2
+        if i == 2:
+          p1x= bufx3 - t
+          p1y= bufy3 - t
+          p2x= bufx3 - t
+          p2y= bufy3 + t
+          p3x= bufx3 + t
+          p3y= bufy3 + t
+          p4x= bufx3 + t
+          p4y= bufy3 - t
+          x= (p4x+p1x)/2
+          y= (p4y+p1y)/2
+        if i == 3:
+          p1x= bufx4 - t
+          p1y= bufy4 - t
+          p2x= bufx4 - t
+          p2y= bufy4 + t
+          p3x= bufx4 + t
+          p3y= bufy4 + t
+          p4x= bufx4 + t
+          p4y= bufy4 - t
+          x= (p4x+p1x)/4
+          y= (p4y+p1y)/4
+        drawQ(imm,p1x,p1y,p2x,p2y,p3x,p3y,p4x,p4y)  
+#        riempiQ(imm,x,y)
+        i = i + 1
+        newdepth = depth + 1
+        control = Repeat(imm,x,y,p1x,p1y,p2x,p2y,p3x,p3y,p4x,p4y,newdepth)
+      depth = depth + 1
+      control = Repeat(imm,x,y,p1x,p1y,p2x,p2y,p3x,p3y,p4x,p4y,depth)
+     
+     
+d = 0
+x = 500
+y = 500
+drawQ(draw,333,333,333,666,666,666,666,333)
+#riempiQ(draw,x,y)
+control = Repeat(draw,x,y,333,333,333,666,666,666,666,333,d)
+
+
+#i = i + 1
+#disp1 = gimp.Display(img)
+
+     
+disp1 = gimp.Display(img)
+
+ 
