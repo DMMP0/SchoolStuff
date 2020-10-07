@@ -1,2 +1,0 @@
-echoserver.EchoServer
-echoserver.ClientEcho

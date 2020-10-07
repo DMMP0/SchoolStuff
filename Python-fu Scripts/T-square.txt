@@ -31,7 +31,7 @@ def serSec(imm,curPx,curPy,p1x,p1y,p2x,p2y,p3x,p3y,p4x,p4y,i,buf) :
      nextPy = int((p4y+curPy)/2)
    else :
       print "error"
-   print (scelta-buf) 
+   #print (scelta-buf) 
    buf = scelta
    pdb.gimp_pencil(draw,2,[nextPx,nextPy])
    i = i + 1
