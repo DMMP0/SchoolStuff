@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">擬似乱数生成器と自己相似図形</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="Randomness">擬似乱数生成器</string>
+    <string name="Fractals">自己相似図形</string>
+    <string name="BBS">ブラムブラムシャブ</string>
+    <string name="Esempio_AND">偏在の擬似乱数生成器の例</string>
+    <string name="GLC">合目的的線状擬似乱数生成器</string>
+    <string name="LF">遅れフィボナッチの探索擬似乱数生成器</string>
+    <string name="RRL">線状視野移動遡及的登記簿</string>
+    <string name="SET">TODO</string>
+    <string name="GEN">TODO</string>
+    <string name="Draw">TODO</string>
+    <string name="Fraction">TODO</string>
+
+    <string name="GLCDescription">合目的的線状擬似乱数生成器は古くて、易しいです.\n
+                再帰の式は : X(n+1) = [ a * X(n) + c] mod m\n
+
+                \tm は加群、m大なり0、m小なり無限大; \n
+                \ta は追補 、a大なり0、a小なりm; \n
+                \tc は乗数、c大なり0、c小なりm; \n
+                \tX0 は種、X0大なり0、X0小なり無限大; \n
+                演算手順の周期はm。\n
+
+                合目的的線状擬似乱数生成器は GCC の rand とJavaの Random class にあります .\n
+                この演算手順を暗号化手法に用いないでください！\n
+</string>
+
+    <string name="LFDescription">これは遅れフィボナッチの探索の擬似乱数生成器.\n
+        擬似乱数生成器の式は F(n) = [ F(n-j) @ F(n-k) ] mod m,、j大なり0、j大なりk、n大なりk\n
+        \tF(n) は最後の値\n
+        \tF(n-j) と F(n-k)はこの遅れフィボナッチの探索の上値\n
+        \t@ は二項演算子(+,-,*,/,XOR,AND,ecc.)\n
+        遅れフィボナッチの探索は定期的式です\n
+        ＋の周期の範囲は 2^{k-1}  *  2^{m-1}です\n
+        ×の周期の範囲は 2^{k-1}  *  2^{m-3}です\n
+        ×の周期の範囲は「＋の周期の範囲」分の4です</string>
+
+    <string name="RRLDescription">線状視野移動遡及的登記簿のインプットはインターナルステータスのアウトプットです.\n
+                式は XOR と XNOR だけです;\n
+                インプットのビットは レギスターのビットです。\n
+                意義深いビットは「タップ」です。\n
+                LFSRに一番大きなの一連はN
+                タップの列は二グレードポリノムですから,ポリノムのコエフィチアンツはゼロです,一です\n
+                 これは言うところの遡及的ポリノムです \n
+                ハードウェアのイムプレゼントすることができますから、迚速い擬似乱数生成器にイムプレゼントすることは便利です\n
+                \t例:レジオの術,直接拡散方式(DSSS)\n
+                GPSも線状視野移動遡及的登記簿を用います
+</string>
+
+    <string name="BBSDescription">演算手順のインプットは q, p, n ,seed.\n
+            \tpとqは素数,\n\tnはpかけるq,\n\tseedは nの互いに素,seed小なりn\n
+            X0は seed の 2 乗 mod n です,\n
+            X(n) は X(n-1)の 2 乗 mod nです\n)
+            そして,X(n)の最小有効ビットをビットの同位列にインサート\n
+            アウトプットはビットの同位列の整数値です\n
+            例\n\tnは5です,ビットの同位列は10001,アウトプットは17
+</string>
+
+    <string name="SerpDesc"> "サーピンスキの三角形は世界で一番有名な自己相似図形です。創造は易しいですから。\n
+              混乱遊戯のサーピンスキの使い方は：\n\t
+              一つ) 三角形の頭頂は起点；\n\t
+              二つ)次の点は先の点と次の点の半ばにあります。（次の点はランダムな起点ですよ）\n
+              非ランダムサーピンスキの使い方は：\n
+              一つ) さんかっけいの側の半ばは起点；\n
+              サーピンスキの三角形の幾何学的領域はゼロ。\n
+</string>
+
+    <string name="TSDesc">この手裏剣的自己相似図形は混乱遊戯丈作られることができます。\n
+              この自己相似図形の使い方は：\n\t
+              一つ) 四角形の頭頂は起点；\n\t
+              二つ)次の点は先の点と次の点の半ばにあります。（次の点はランダムな起点ですよ）\n
+              制約) 次の点は反時計回り点ことができません。
+</string>
+
+    <string name="ShurikenDesc">この手裏剣的自己相似図形は混乱遊戯丈作られることができます。\n
+              この自己相似図形の使い方は：\n\t
+              一つ) 四角形の頭頂は起点；\n\t
+              二つ)次の点は先の点と次の点の半ばにあります。（次の点はランダムな起点ですよ）\n
+              制約) 次の点は反時計回り点ことができません。\n
+</string>
+
+    <string name="ForestDesc">この森的自己相似図形は混乱遊戯丈作られることができます。\n
+              この自己相似図形の使い方は：\n\t
+              一つ) 四角形の頭頂は起点；\n\t
+              二つ)次の点は先の点と次の点の半ばにあります。（次の点はランダムな起点ですよ）\n
+              制約) 次の点の値はーことができません。\n
+              値は:\n
+              ー\t四\n三\t二\n
+</string>
+
+    <string name="QuadDesc">この自己相似図形は混乱遊戯丈作られることができます。\n
+              使い方は：\n\t
+              一つ) 四角形の頭頂は起点；\n\t
+              二つ)次の点は先の点と次の点の半ばにあります。（次の点はランダムな起点ですよ）\n
+              制約) 次の点は同じ点ことができません。
+</string>
+
+    <string name="PentSerp">この自己相似図形は混乱遊戯丈作られることができます。\n
+              この自己相似図形の使い方は：\n\t
+              一つ) 五角形の頭頂は起点；\n\t
+              二つ)次の点は先の点と次の点の半ばにあります。（次の点はランダムな起点ですよ）\n
+              制約) 次の点の値はーことができません。\n
+              値は:\n
+              \t一\t\n二\t\t五\n  三   四\n
+</string>
+
+    <string name="HiveDesc">この自己相似図形は混乱遊戯丈作られることができます。\n
+              使い方は：\n\t
+              一つ) 五角形の頭頂は起点；\n\t
+              二つ)次の点は先の点と次の点の半ばにあります。（次の点はランダムな起点ですよ）\n
+              制約) 次の点は同じ点ことができません。
+</string>
+
+    <string name="NoName">Unnamed Fractal</string>
+
+    <string name="StarDesc">この自己相似図形は混乱遊戯丈作られることができます。\n
+              使い方は：\n\t
+              一つ) 五角形の頭頂は起点；\n\t
+              二つ)次の点は先の点と次の点の半ばにあります。（次の点はランダムな起点ですよ）\n
+              制約) 次の点は隣接点ことができません。
+</string>
+
+    <string name="FernDesc">バルネイーのフェーンは独特な自己相似図形です。\n
+            使い方は：\n\t
+            蓋然性  xの式                      yの式  \n
+            1%:     x = 0                     y = 0.16 * y\n
+            7%:     x = 0.2 * x - 0.26 * y    y = 0.23 * x + 0.22 * y + 1.6\n
+            7%:     x = -0.15 * x + 0.28 * y  y = 0.26 * x + 0.24 * y + 0.44\n
+            85%:    x = 0.85 * x + 0.04 * y   y = -0.04 * x + 0.85 * y + 1.6\n
+            xの範囲は \n  //TODO
+            xの範囲は \n  //TODO
+</string>
+
+    <string name="Fern">バルネイーのフェーン</string>
+
+    <string name="Mandelbrot">マンダブロットのセット</string>
+
+    <string name="MandelbrotDesc">マンダブロットのセットは奇妙な自己相似図形です。創造は優しいですから。\n
+              　複素平面に作らなければなりません：\n\t
+              xの式は  //TODO
+                //TODO IF THEN COLORI
+              。
+</string>
+    <string name="Point">点</string>
+</resources>
+

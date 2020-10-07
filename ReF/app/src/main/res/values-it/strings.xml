@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Casualità e Frattali</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Invio</string>
+    <string name="Randomness">Casualità</string>
+    <string name="Fractals">Frattali</string>
+    <string name="BBS">Blum Blum Shub</string>
+    <string name="Esempio_AND">Esempio di algoritmo non distribuito</string>
+    <string name="GLC">Generatore Lineare Congruenziale</string>
+    <string name="LF">Generatore di Fibonacci Ritardato</string>
+    <string name="RRL">Registro a Scorrimento a Retroazione Lineare</string>
+    <string name="SET">Imposta valori</string>
+    <string name="GEN">Genera</string>
+    <string name="Draw">Disegna</string>
+    <string name="Fraction">Frazione</string>
+    <string name="GLCDescription">todo</string>
+    <string name="LFDescription">todo</string>
+    <string name="RRLDescription">todo</string>
+    <string name="BBSDescription">todo</string>
+    <string name="SerpDesc">Il triangolo di Serpinsky è senza dubbio uno dei frattali più famosi, principalmente per la semplicemente di costruzione.\n
+              Per realizzarlo tramite chaos game bisogna seguire il seguente procedimento:\n\t
+              1) si prende come punto di partenza uno dei 3 punti iniziali(i vertici del triangolo);\n\t
+              2) Il punto successivo sarà scelto a metà tra la distanza del punto corrente e uno dei vertici(scelti casualmente);\n 
+              Nel caso si voglia realizzarlo in modo non procedurale, occorre inscrivere un triangolo  all' interno di quello iniziale,\n utilizzando i punti medi dei lati come vertici, per poi ripetere il procedimento per ogni livello di ricorsione con i triangoli che si formeranno.\n
+              Un triangolo di Serpinsky iterato all' infinito ha un area pari a 0.</string>
+    <string name="TSDesc">Il T-Square è anch\'esso uno dei frattali più conosciuti.A partire da questo però, tutti i frattali presi in caso avrenno una condizione da rispettare nella scelt del vertice, pur essendo essa casuale.\nCome per il Triangolo di Serpinski esistono due metodi per ottenerlo:\n
+            METODO NON PROCEDURALE:\n\tLa figura di partenza è un quadrato.\n\t
+            Successivamente si creano dei quadrati aventi come centro gli angoli del quadrato iniziale e come lato metà della lunghezza del quadrato iniziale.\n\t
+            Si ripete il tutto fino al livello di ricorsione desiderato.\n
+            CHAOS GAME:\n\tSi hanno come punti di riferimento qgli estremi del quadrato iniziale.\n\tIl punto successivo sarà a metà della distanza del vertice scelto.\n\t
+            Condizione: il vertice scelto non deve essere opposto a quello appena scelto. (Non deve avere una distanza pari a 2)</string>
+    <string name="ShurikenDesc">Questo frattale senza nome, simile ad uno shuriken, può essere ottenuto solo tramite chaos game.\n
+            La figura di partenza è un quadrato.\n
+            La condizione è che il vertice seguente non sia il successivo antiorario di quello scelto in precedenza.</string>
+    <string name="ForestDesc">Questo frattale senza nome può essere ottenuto solo tramite chaos game.\n
+            La figura di partenza è un quadrato.\n
+            La condizione è che il vertice seguente non sia a distanza di uno dal valore numerico assegnato ai vertici.\n
+            I vertici hanno valore:\n
+            1\t4\n
+            \n
+            \n
+            2\t3\n</string>
+    <string name="QuadDesc">Questo frattale senza nome può essere ottenuto solo tramite chaos game.\n
+            La figura di partenza è un quadrato.\n
+            La condizione è che il vertice seguente non sia lo stesso appena scelto</string>
+    <string name="PentSerp">La figura di partenza è un pentagono.\n
+            La condizione è che il vertice seguente non sia a distanza di 1 dal valore numerico assegnato ai vertici.\n
+            I vertici hanno valore:\n
+                1    \n
+            2       5\n
+              3   4\n</string>
+    <string name="HiveDesc">Questo frattale senza nome può essere ottenuto solo tramite chaos game.\n
+            La figura di partenza è un pentagono.\n
+            La condizione è che il vertice seguente non sia lo stesso appena scelto</string>
+    <string name="NoName">Frattale senza nome</string>
+    <string name="StarDesc">Questo frattale senza nome può essere ottenuto solo tramite chaos game.\n
+            La figura di partenza è un pentagono.\n
+            La condizione è che il vertice seguente non sia l' adiacente di uno dei due vertici scelti in precedenza</string>
+    <string name="FernDesc">La felce di Barnsley è un frattale piuttosto peculiare.\n
+            Per essere ottenuto bisogna sfruttare il seguente set di equazioni, con le seguenti probabilità di scelta:\n
+            1%:\n\t x = 0\n\t y = 0.16 * y\n
+            7%:\n\t x = 0.2 * x - 0.26 * y\n\t y = 0.23 * x + 0.22 * y + 1.6\n
+            7%\n\t x = -0.15 * x + 0.28 * y\n\t y = 0.26 * x + 0.24 * y + 0.44\n
+            85%:\n\t x = 0.85 * x + 0.04 * y\n\t y = -0.04 * x + 0.85 * y + 1.6\n
+            Il risultato sarà, appunto, una felce.\n
+            Per cambiarne la forma è necessario cambiare i coefficienti delle varie equazioni.\n
+            Il range del risultato varia per la x da 0 a 2.83, per la y da 0 a 9.999,\n
+            per riprodurla in scala maggiore occorre quindi operare delle trasformazioni opportune al risultato desiderato.</string>
+    <string name="Fern">Felce di Barnsley</string>
+    <string name="Mandelbrot">Set di Mandelbrot</string>
+    <string name="MandelbrotDesc">Il set di Mandelbrot è un frattale piuttosto bizarro.\n
+            Per realizzarlo non basta più l\'insieme dei numeri reali,\n ma occorre spostarsi nel piano di Gauss.\n
+            Per realizzarlo occorre iterare la seguente funzione:\n
+            \tz(0) = 0\n\tz(n+1) = [z(n)]^(2)+c\n
+            Si colorano di nero i punti in cui la funzione dopo n iterazioni smette di crescere,\n
+            si colorano gli altri punti con colori di intensità crescente a seconda della velocità di crescita della funzione.\n
+            La particolarità di questa funzione sta in quello che succede nei bordi.</string>
+    <string name="speed">velocità</string>
+    <string name="Point">punti</string>
+</resources>
