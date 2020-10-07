@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<magazzino>
+	<prodotto>
+		<categoria>Telefonia</categoria>
+		<codice>1234567890</codice>
+		<marca>Blackberry</marca>
+		<modello>Q10</modello>
+		<descrizione>Smartphon con tastiera QWERTY</descrizione>
+		<prezzo>550.00</prezzo>
+		<quantità>9</quantità>
+	</prodotto>
+	<prodotto>
+		<categoria>Informatica</categoria>
+		<codice>0123456789</codice>
+		<marca>DELL</marca>
+		<modello>Precision M4700</modello>
+		<descrizione>PC notebook</descrizione>
+		<prezzo>2350.00</prezzo>
+		<quantità>3</quantità>
+	</prodotto>
+	<prodotto>
+		<categoria>Video</categoria>
+		<codice>2345678901</codice>
+		<marca>AOC</marca>
+		<modello>Q2345</modello>
+		<descrizione>Schermo superwide</descrizione>
+		<prezzo>299.00</prezzo>
+		<quantità>0</quantità>
+	</prodotto>
+	<prodotto>
+		<categoria>Video</categoria>
+		<codice>345678901</codice>
+		<marca>ZOC</marca>
+		<modello>Z2345</modello>
+		<descrizione>Schermo super</descrizione>
+		<prezzo>299.00</prezzo>
+		<quantità>0</quantità>
+	</prodotto>
+</magazzino>

@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<CartaID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cartaID.xsd">
+  <Nome>Paolo</Nome>
+  <Cognome>Rossi</Cognome>
+  <DataNasc>1995-03-20</DataNasc>
+  <Alt>1.90</Alt>
+</CartaID>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:complexType name="tipo_prodotto">
+		<xs:sequence>
+			<xs:element name="categoria">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Audio"/>
+						<xs:enumeration value="Video"/>
+						<xs:enumeration value="Telefonia"/>
+						<xs:enumeration value="Informatica"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="codice">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="15"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="marca" type="xs:string"/>
+			<xs:element name="modello" type="xs:string"/>
+			<xs:element name="descrizione" type="xs:string"/>
+			<xs:element name="prezzo">
+				<xs:simpleType>
+					<xs:restriction base="xs:float">
+						<xs:minExclusive value="0.0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="quantità">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="magazzino">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="prodotto" type="tipo_prodotto" minOccurs="0" maxOccurs="unbounded"/>		
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>

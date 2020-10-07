@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RaccoltaCD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CD.xsd">
+  <CD>
+    <ID>1</ID>
+    <Autore>Utsu-P</Autore>
+    <Titolo>Galapagos</Titolo>
+    <Brano>ガラパゴスで悪いか</Brano>
+    <Brano>生きてるおばけは生きている</Brano>
+    <Brano>オブラートオブラブ</Brano>
+    <Brano>麺屋ぐろてすく</Brano>
+    <Brano>食事</Brano>
+    <Brano>HIKIZURI</Brano>
+    <Brano>未来の夏休み</Brano>
+    <Brano>飴ちゃん</Brano>
+    
+  </CD>
+  <CD>
+    <ID>2</ID>
+    <Autore>ZUN</Autore>
+    <Titolo>Hidden Star in Four Seasons</Titolo>
+    <Brano>桜舞い散る天空</Brano>
+    <Brano>希望の星は青霄に昇る</Brano>
+    <Brano>真夏の妖精の夢</Brano>
+    <Brano>色無き風は妖怪の山に</Brano>
+    <Brano>山奥のエンカウンター</Brano>
+    <Brano>桜色の海を泳いで</Brano>
+    <Brano>一対の神獣</Brano>
+    <Brano>幻想のホワイトトラベラー</Brano>
+    <Brano>魔法の笠地蔵</Brano>
+    <Brano>禁断の扉の向こうは、この世かあの世か</Brano>
+    <Brano>クレイジーバックダンサーズ</Brano>
+    <Brano>イントゥ・バックドア</Brano>
+    <Brano>秘匿されたフォーシーズンズ</Brano>
+    <Brano>もうドアには入れない</Brano>
+    <Brano>秘神マターラ ～ Hidden Star in All Seasons.</Brano>
+    <Brano>不自然な自然</Brano>
+    <Brano>白い旅人</Brano>
+  </CD>
+  <CD>
+    <ID>3</ID>
+    <Autore>Bag Raiders</Autore>
+    <Titolo></Titolo>
+    <Brano>Shooting Stars</Brano>
+  </CD>
+</RaccoltaCD>
