@@ -1,0 +1,34 @@
+<?php
+// Inserisci in questo punto il codice per la connessione al DB e l'utilizzo delle varie funzioni.
+sec_session_start();
+?>
+<HTML>
+<HEAD>
+   <TITLE>Esempio 2</TITLE>
+</HEAD>
+    <BODY BACKGROUND="titto_green_paper.jpg">
+        <?php
+          if(login_check($mysqli) == true) 
+          {
+<CENTER><H1>Le figure in HTML</H1></CENTER>
+<FONT SIZE=+1>
+
+<IMG SRC="kanoyou.jpg"> dimensioni naturali (lo sfondo &egrave; trasparente)
+<HR WIDTH="100%">
+
+questa figura &egrave;
+<IMG SRC="mandelbrot.jpg" BORDER=3 HEIGHT=100 WIDTH=91>
+scalata e con cornice
+<HR WIDTH="100%">
+
+
+</FONT>
+
+          } 
+          else 
+         {
+         echo 'You are not authorized to access this page, please login. <br/>';
+         }
+    ?>
+    </BODY>
+</HTML>

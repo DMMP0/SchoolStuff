@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+<body>
+    <form  </form> 
+     <form action="post-method.php" method="post"> 
+          <table border="0" summary="calcolo codice fiscale">
+          <tbody><tr> 
+                 <td>Cognome:</td>
+                 <td><input name="Cognome" size="20" value=""></td>
+                 </tr>
+                 <tr>
+                 <td>Nome:</td>
+<td><input name="Nome" size="20" value=""></td>
+</tr>
+<tr>
+<td>Data di nascita:</td>
+<td> 
+<select name="Giorno" size="1">
+<option selected="selected" value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<select name="Mese" size="1">
+<option selected="selected" value="A">Gennaio</option>
+<option value="B">Febbraio</option>
+<option value="C">Marzo</option>
+<option value="D">Aprile</option>
+<option value="E">Maggio</option>
+<option value="H">Giugno</option>
+<option value="L">Luglio</option>
+<option value="M">Agosto</option>
+<option value="P">Settembre</option>
+<option value="R">Ottobre</option>
+<option value="S">Novembre</option>
+<option value="T">Dicembre</option>
+</select>
+<input name="Anno" size="4" maxlength="4" value="">
+</td>
+</tr>
+<tr>
+<td>Sesso:</td>
+<td>
+<input name="gender" type="radio" value="0" checked="checked"> Maschio  /
+<input name="gender" type="radio" value="1"> Femmina
+</td></tr>
+<tr>
+<td>Iniziale del comune di nascita:</td><td> 
+<a href="javascript:wind('alfa/A->php')" onclick="javascript:wind('alfa/A->php');" onfocus="if(this->blur)this->blur()"><b>A</b></a> 
+<a href="javascript:wind('alfa/B->php')" onclick="javascript:wind('alfa/B->php');" onfocus="if(this->blur)this->blur()"><b>B</b></a> 
+<a href="javascript:wind('alfa/C->php')" onclick="javascript:wind('alfa/C->php');" onfocus="if(this->blur)this->blur()"><b>C</b></a> 
+<a href="javascript:wind('alfa/D->php')" onclick="javascript:wind('alfa/D->php');" onfocus="if(this->blur)this->blur()"><b>D</b></a> 
+<a href="javascript:wind('alfa/E->php')" onclick="javascript:wind('alfa/E->php');" onfocus="if(this->blur)this->blur()"><b>E</b></a> 
+<a href="javascript:wind('alfa/F->php')" onclick="javascript:wind('alfa/F->php');" onfocus="if(this->blur)this->blur()"><b>F</b></a> 
+<a href="javascript:wind('alfa/G->php')" onclick="javascript:wind('alfa/G->php');" onfocus="if(this->blur)this->blur()"><b>G</b></a> 
+<a href="javascript:wind('alfa/HIJ->php')" onclick="javascript:wind('alfa/HIJ->php');" onfocus="if(this->blur)this->blur()"><b>H I J</b></a> 
+<a href="javascript:wind('alfa/L->php')" onclick="javascript:wind('alfa/L->php');" onfocus="if(this->blur)this->blur()"><b>L</b></a> 
+<a href="javascript:wind('alfa/M->php')" onclick="javascript:wind('alfa/M->php');" onfocus="if(this->blur)this->blur()"><b>M</b></a> 
+<a href="javascript:wind('alfa/N->php')" onclick="javascript:wind('alfa/N->php');" onfocus="if(this->blur)this->blur()"><b>N</b></a> 
+<a href="javascript:wind('alfa/O->php')" onclick="javascript:wind('alfa/O->php');" onfocus="if(this->blur)this->blur()"><b>O</b></a> 
+<a href="javascript:wind('alfa/P->php')" onclick="javascript:wind('alfa/P->php');" onfocus="if(this->blur)this->blur()"><b>P</b></a> 
+<a href="javascript:wind('alfa/Q->php')" onclick="javascript:wind('alfa/Q->php');" onfocus="if(this->blur)this->blur()"><b>Q</b></a> 
+<a href="javascript:wind('alfa/R->php')" onclick="javascript:wind('alfa/R->php');" onfocus="if(this->blur)this->blur()"><b>R</b></a> 
+<a href="javascript:wind('alfa/S->php')" onclick="javascript:wind('alfa/S->php');" onfocus="if(this->blur)this->blur()"><b>S</b></a> 
+<a href="javascript:wind('alfa/T->php')" onclick="javascript:wind('alfa/T->php');" onfocus="if(this->blur)this->blur()"><b>T</b></a> 
+<a href="javascript:wind('alfa/U->php')" onclick="javascript:wind('alfa/U->php');" onfocus="if(this->blur)this->blur()"><b>U</b></a> 
+<a href="javascript:wind('alfa/V->php')" onclick="javascript:wind('alfa/V->php');" onfocus="if(this->blur)this->blur()"><b>V</b></a> 
+<a href="javascript:wind('alfa/Z->php')" onclick="javascript:wind('alfa/Z->php');" onfocus="if(this->blur)this->blur()"><b>Z</b></a> 
+<a href="javascript:wind('estero->php')" onclick="javascript:wind('estero->php');" onfocus="if(this->blur)this->blur()"><b>Estero</b></a>
+</td></tr>
+<tr>
+<td>Oppure selezione geografica:</td><td>
+<a href="javascript:wind('reg/prov/AO->php')" onclick="javascript:wind('reg/prov/AO->php');" onfocus="if(this->blur)this->blur()">Valle d'Aosta</a> 
+<a href="javascript:wind('reg/Piemonte->php')" onclick="javascript:wind('reg/Piemonte->php');" onfocus="if(this->blur)this->blur()">Piemonte</a> 
+<a href="javascript:wind('reg/Lombardia->php')" onclick="javascript:wind('reg/Lombardia->php');" onfocus="if(this->blur)this->blur()">Lombardia</a> 
+<a href="javascript:wind('reg/Trentino->php')" onclick="javascript:wind('reg/Trentino->php');" onfocus="if(this->blur)this->blur()">Trentino Alto Adige</a> 
+<a href="javascript:wind('reg/Veneto->php')" onclick="javascript:wind('reg/Veneto->php');" onfocus="if(this->blur)this->blur()">Veneto</a> 
+<a href="javascript:wind('reg/Friuli->php')" onclick="javascript:wind('reg/Friuli->php');" onfocus="if(this->blur)this->blur()">Friuli Venezia Giulia</a> 
+<a href="javascript:wind('reg/Liguria->php')" onclick="javascript:wind('reg/Liguria->php');" onfocus="if(this->blur)this->blur()">Liguria</a> 
+<a href="javascript:wind('reg/Emilia->php')" onclick="javascript:wind('reg/Emilia->php');" onfocus="if(this->blur)this->blur()">Emilia Romagna</a><br>
+<a href="javascript:wind('reg/Toscana->php')" onclick="javascript:wind('reg/Toscana->php');" onfocus="if(this->blur)this->blur()">Toscana</a> 
+<a href="javascript:wind('reg/Marche->php')" onclick="javascript:wind('reg/Marche->php');" onfocus="if(this->blur)this->blur()">Marche</a> 
+<a href="javascript:wind('reg/Umbria->php')" onclick="javascript:wind('reg/Umbria->php');" onfocus="if(this->blur)this->blur()">Umbria</a> 
+<a href="javascript:wind('reg/Lazio->php')" onclick="javascript:wind('reg/Lazio->php');" onfocus="if(this->blur)this->blur()">Lazio</a> 
+<a href="javascript:wind('reg/Abruzzo->php')" onclick="javascript:wind('reg/Abruzzo->php');" onfocus="if(this->blur)this->blur()">Abruzzo</a> 
+<a href="javascript:wind('reg/Molise->php')" onclick="javascript:wind('reg/Molise->php');" onfocus="if(this->blur)this->blur()">Molise</a> 
+<a href="javascript:wind('reg/Campania->php')" onclick="javascript:wind('reg/Campania->php');" onfocus="if(this->blur)this->blur()">Campania</a> 
+<a href="javascript:wind('reg/Puglia->php')" onclick="javascript:wind('reg/Puglia->php');" onfocus="if(this->blur)this->blur()">Puglia</a> 
+<a href="javascript:wind('reg/Calabria->php')" onclick="javascript:wind('reg/Calabria->php');" onfocus="if(this->blur)this->blur()">Calabria</a> 
+<a href="javascript:wind('reg/Sardegna->php')" onclick="javascript:wind('reg/Sardegna->php');" onfocus="if(this->blur)this->blur()">Sardegna</a> 
+<a href="javascript:wind('reg/Sicilia->php')" onclick="javascript:wind('reg/Sicilia->php');" onfocus="if(this->blur)this->blur()">Sicilia</a> 
+<a href="javascript:wind('estero->php')" onclick="javascript:wind('estero->php');" onfocus="if(this->blur)this->blur()">Estero</a>
+</td></tr>
+<tr>
+<td>Codice Comune:</td>
+<td>
+<input type="text" maxlength="4" size="4" name="Comune" value="">
+</td>
+</tr>
+<tr>
+<td>Codice Fiscale:</td>
+<td> 
+<input name="CodiceFiscale" size="22" value="" readonly="readonly">
+</td>
+</tr>
+<tr><td></td></tr>
+<tr>
+<td></td>
+<td>
+<input type="button" value="Reset" onclick="ReloadButton()" name="button"> 
+<input name="Calcola" type="button" value=" Calcola " onclick="CalcolaCodiceFiscale()">
+</td>
+</tr>
+</tbody></table>
+<script type="text/javascript">function ReloadButton(){location->href="index->php?lang=it";}</script>
+</form>
+
+ <?php
+       $Nome = test_input($_POST["Nome"]);
+  $Cognome = test_input($_POST["Cognome"]);
+  $Anno = test_input($_POST["Anno"]);
+  $Comune = test_input($_POST["Comune"]);
+  $gender = test_input($_POST["gender"]);
+  $Mese = test_input($_POST["Mese"]);
+  $Giorno = test_input($_POST["Giorno"]);
+  $CodiceFiscale;
+  
+
+     
+        function CheckCognome() {
+	if(strlen($Cognome)) {
+	    echo '<pre>';
+		echo "Attenzione:\nCognome mancante! ";
+		echo '<\pre>';
+		return(0);
+	}
+	$Cognome = strtouper($Cognome);
+	return(1);
+}
+
+function CheckNome() {
+	if(strlen($Nome)< 1) {
+	    echo '<pre>';
+		echo "Attenzione:\nNome mancante! ";
+		echo '<\pre>';
+		return(0);
+	}
+	$Nome = strtoupper($Nome);
+	return(1);
+}
+
+function CheckAnno() {
+	if(strlen($Anno) < 1) {
+	    echo '<pre>';
+		echo "Attenzione:\nAnno di nascita mancante! ";
+		echo '<\pre>';
+		return(false);
+	}
+	if(isNaN($Anno)) {
+	    echo '<pre>';
+		echo "Attenzione:\nanno di nascita non corretto. ";
+		echo '<\pre>';
+		return(false);
+	}
+	$anno=parseInt($Anno,10);
+	if($anno<100) {
+		if($anno<50) $anno+=2000;
+		else $anno+=1900;
+		$Anno=$anno;
+		}
+	return(true);
+}
+
+function CheckComune() {
+	if(strlen($Comune) < 1) {
+	    echo '<pre>';
+		echo "Attenzione:\nLuogo di nascita mancante! ";
+		echo '<\pre>';
+		return(false);
+	}
+	if(strlen($Comune) != 4) {
+	    echo '<pre>';
+		echo "Attenzione:\nLunghezza codice luogo di nascita errata. ";
+		echo '<\pre>';
+		return(false);
+	}
+	$Comune = touppercase($Comune);
+	$c='';
+	$bool=true;
+	$c=$Comune[0];
+	if($c>='A' && $c<='Z') { //il primo è una lettera
+		$c=$Comune[1];
+		for($i=1;$i<4;$i++,$c=$Comune[i]) //gli altri tre
+			if(!($c>='0' && $c<='9')) $bool=false; //non sono dei numeri
+	} //il primo non è una lettera
+	else $bool=false;
+	if(!$bool) echo echo '<pre>'."Attenzione:\nSintassi codice luogo di nascita errata. ".'<\pre>';
+	return($bool);
+}
+
+function CheckData($g,$m,$a) {
+	switch($g) {
+		case 31: if($m=='A' || $m=='C' || $m=='E' || $m=='L' || $m=='M' || $m=='R' || $m=='T') return(true);
+			else { 
+				echo  '<pre>'."Attenzione:\nData di nascita impossibile!\nIl mese selezionato non pu&ograve; avere 31 giorni. ".'<\pre>';
+				return(false);
+			}
+		case 30: if($m!='B') return(true);
+			else { 
+				echo '<pre>'."Attenzione:\nData di nascita impossibile!\nFebbario non pu&ograve; avere 30 giorni. ".'<\pre>';
+				return(false);
+			}
+		case 29: if($m!='B') return(true);
+			else if(($a%4==0 && a%100!=0) || $a%400==0) return(true);
+				else { 
+					echo '<pre>'."Attenzione:\nData di nascita impossibile!\n"+a+" non &egrave; un anno bisestile. ".'<\pre>';
+					return(false);
+				}
+		default: return(true);
+	}
+}
+
+function deaccenta(nome) {
+	$newNome="";
+	$l=strlen(nome);
+	$c=nome[0];
+	for($i=0;$i<l;$i++, $c=nome[i]) switch ($c) {
+		case 'È': newNome.'E'; break;
+		case 'É': newNome.'E'; break;
+		case 'À': newNome.'A'; break;
+		case 'Ò': newNome.'O'; break;
+		case 'Ç': newNome.'C'; break;
+		case 'Ì': newNome.'I'; break;
+		case 'Ù': newNome.'U'; break;
+		case 'Ä': newNome.'A'; break;
+		case 'Ö': newNome.'O'; break;
+		case 'Ü': newNome.'U'; break;
+		default: newNome.$c;
+	}	
+	return(newNome);
+}
+
+function isVocal($lettera) {
+	switch ($lettera) {
+		case 'A':
+		case 'E':
+		case 'I':
+		case 'O':
+		case 'U': return(true);
+		default: return(false);
+	}
+}
+
+function CalcolaCodiceFiscale() {
+	if(!($checkCognome() && CheckNome() && CheckAnno())) return; //esclude subito casi dati mancanti
+	//$Giorno=parseInt(test_input($_POST["Giorno"]),10);    ///  ---------------------------------------------------------------
+	//$Anno=$Anno;
+	//$Mese=parseInt(test_input($_POST["Mese"]),10);
+	if(!($checkData(Giorno,Mese,Anno) && CheckComune())) return; //esclude date impossibili e comune errato
+	//$Comune=$Comune;	
+	$Sesso;
+	$gs=0;
+	$somma=0;
+	$strcodFis="";
+	$strcognome="";
+	$nome="";
+	$cognome="";
+	$strnome="";
+	$strgiornosex="";
+	$chrcontrollo='';
+	$c='';
+	$l=0;
+	if($gender == true) $Sesso=0; //maschio
+	else $Sesso=40; //femmina
+	$cognome=deaccenta($Cognome); //cognome
+	$l=strlen($cognome);
+	for($i=0, $c=$cognome[0]; $i<l; $i++, $c=$cognome[$i])
+		if(!isVocal($c) && $c<='Z' && $c>'A') $strcognome = $strcognome.$c;
+	if(strlen($strcognome) < 3)
+		for($i=0, $c=$cognome[0]; $i<l; $i++, $c=$cognome[$i])
+			if(isVocal($c)) $strcognome = $strcognome.$c;
+	if(strlen($strcognome) < 3)
+		for($i=strlen($strcognome); $i <= 3; $i++) $strcognome = $strcognome.'X'; ----------
+	$strcognome = substr($strcognome,0,3);
+	$nome=deaccenta($Nome); //nome
+	$l=strlen($nome);
+	for ($i=0, $c=nome[0]; $i<l; $i++, $c=nome[i])
+		if(!isVocal($c) && c<='Z' && c>'A') $strnome = $strnome.$c;
+	if(strlen($strnome) > 3) $strnome = substr($strnome,0,1) + substr($strnome,2,4);
+	else
+		if(strlen($strnome) < 3)
+			for ($i=0, $c=nome[0]; $i<l; $i++, $c=nome[i])
+				if(isVocal($c)) $strnome =$strnome.$c;
+	if(strlen($strnome) < 3)
+		for ($i=strlen($strnome); $i<=3; $i++)$strnome =$strnome. 'X';
+		$strnome = substr($strnome,0,3);
+	//giorno e sesso
+	$gs = $Giorno + $Sesso;
+	if($gs<10) $strgiornosex = "0" + $gs;
+	else $strgiornosex =  $gs;
+	$anno=$Anno%100;
+	if($anno<10) $anno="0"+$anno;
+	$strcodFis = $strcognome.$strnome.$anno.$Mese.$strgiornosex.$Comune;
+ 	// calcola il carattere di controllo
+ 	for ($i=0; $i<15; $i++) {
+ 		if ((($i+1) % 2) != 0) switch ($strcodFis[i]) { //caratteri dispari
+ 			case '0':
+ 			case 'A': $somma += 1; break;
+ 			case '1':
+ 			case 'B': $somma += 0; break;
+ 			case '2':
+ 			case 'C': $somma += 5; break;
+ 			case '3':
+ 			case 'D': $somma += 7; break;
+ 			case '4':
+ 			case 'E': $somma += 9; break;
+ 			case '5':
+ 			case 'F': $somma += 13; break;
+ 			case '6':
+ 			case 'G': $somma += 15; break;
+ 			case '7':
+ 			case 'H': $somma += 17; break;
+ 			case '8':
+ 			case 'I': $somma += 19; break;
+ 			case '9':
+ 			case 'J': $somma += 21; break;
+ 			case 'K': $somma += 2; break;
+ 			case 'L': $somma += 4; break;
+ 			case 'M': $somma += 18; break;
+ 			case 'N': $somma += 20; break;
+ 			case 'O': $somma += 11; break;
+ 			case 'P': $somma += 3; break;
+ 			case 'Q': $somma += 6; break;
+ 			case 'R': $somma += 8; break;
+ 			case 'S': $somma += 12; break;
+			case 'T': $somma += 14; break;
+ 			case 'U': $somma += 16; break;
+			case 'V': $somma += 10; break;
+ 			case 'W': $somma += 22; break;
+ 			case 'X': $somma += 25; break;
+ 			case 'Y': $somma += 24; break;
+ 			case 'Z': $somma += 23; break;
+ 		} //switch caratteri dispari
+ 		else switch ($strcodFis[i]) { //caratteri pari    
+ 			case '0':
+			case 'A': $somma += 0; break;
+			case '1':
+			case 'B': $somma += 1; break;
+			case '2':
+			case 'C': $somma += 2; break;
+			case '3':
+			case 'D': $somma += 3; break;
+			case '4':
+			case 'E': $somma += 4; break;
+			case '5':
+			case 'F': $somma += 5; break;
+			case '6':
+			case 'G': $somma += 6; break;
+			case '7':
+			case 'H': $somma += 7; break;
+			case '8':
+			case 'I': $somma += 8; break;
+			case '9':
+			case 'J': $somma += 9; break;
+			case 'K': $somma += 10; break;
+			case 'L': $somma += 11; break;
+			case 'M': $somma += 12; break;
+			case 'N': $somma += 13; break;
+			case 'O': $somma += 14; break;
+			case 'P': $somma += 15; break;
+			case 'Q': $somma += 16; break;
+			case 'R': $somma += 17; break;
+			case 'S': $somma += 18; break;
+			case 'T': $somma += 19; break;
+			case 'U': $somma += 20; break;
+			case 'V': $somma += 21; break;
+			case 'W': $somma += 22; break;
+			case 'X': $somma += 23; break;
+			case 'Y': $somma += 24; break;
+			case 'Z': $somma += 25; break;
+		} //switch caratteri pari
+	} //for
+	$somma %= 26;
+	switch ($somma) {
+		case 0:  $chrcontrollo='A'; break;
+		case 1:  $chrcontrollo='B'; break;
+		case 2:  $chrcontrollo='C'; break;
+		case 3:  $chrcontrollo='D'; break;
+		case 4:  $chrcontrollo='E'; break;
+		case 5:  $chrcontrollo='F'; break;
+		case 6:  $chrcontrollo='G'; break;
+		case 7:  $chrcontrollo='H'; break;
+		case 8:  $chrcontrollo='I'; break;
+		case 9:  $chrcontrollo='J'; break;
+		case 10:  $chrcontrollo='K'; break;
+		case 11:  $chrcontrollo='L'; break;
+		case 12:  $chrcontrollo='M'; break;
+		case 13:  $chrcontrollo='N'; break;
+		case 14:  $chrcontrollo='O'; break;
+		case 15:  $chrcontrollo='P'; break;
+		case 16:  $chrcontrollo='Q'; break;
+		case 17:  $chrcontrollo='R'; break;
+		case 18:  $chrcontrollo='S'; break;
+		case 19:  $chrcontrollo='T'; break;
+		case 20:  $chrcontrollo='U'; break;
+		case 21:  $chrcontrollo='V'; break;
+		case 22:  $chrcontrollo='W'; break;
+		case 23:  $chrcontrollo='X'; break;
+		case 24:  $chrcontrollo='Y'; break;
+		case 25:  $chrcontrollo='Z'; break;
+	} //switch $somma
+	$CodiceFIscale = $strcodFis +  $chrcontrollo;
+	return;
+}  ?>
+
+</body>
+</html>
