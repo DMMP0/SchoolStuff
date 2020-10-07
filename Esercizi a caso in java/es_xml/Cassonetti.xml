@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Cassonetti xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Cassonetto.xsd">
+    <Cassonetto>
+        <ID>1</ID>
+        <Tipologia>Generico</Tipologia>
+        <Indirizzo>
+            <Via>A.Rossi</Via>
+            <Numero_Civico>85</Numero_Civico>
+        </Indirizzo>
+        <Coordinate_Geografiche>
+            <Latitudine>9.00</Latitudine>
+            <Longitudine>9.00</Longitudine>
+        </Coordinate_Geografiche>
+        <Note_Testuali>Il cassonetto è giallo</Note_Testuali>
+        <Data_Posizionamento>2017-12-27</Data_Posizionamento>
+        <Ultimo_Svuotamento>
+            <Operatore>1</Operatore>
+            <Operatore>2</Operatore>
+            <Operatore>3</Operatore>
+            <Operatore>4</Operatore>
+            <Operatore>5</Operatore>
+            <Veicolo>0000001</Veicolo>
+            <Veicolo>00000A7</Veicolo>
+            <Veicolo>0000003</Veicolo>
+            <Veicolo>0000002</Veicolo>
+            <Data_Ora>2017-12-27T00:00:00</Data_Ora>
+        </Ultimo_Svuotamento>
+        <Volume>2</Volume>
+    </Cassonetto>
+
+    <Cassonetto>
+        <ID>2</ID>
+        <Tipologia>Vetro</Tipologia>
+        <Indirizzo>
+            <Via>D.Bianchi</Via>
+            <Numero_Civico>300</Numero_Civico>
+        </Indirizzo>
+        <Coordinate_Geografiche>
+            <Latitudine>500.00</Latitudine>
+            <Longitudine>500.00</Longitudine>
+        </Coordinate_Geografiche>
+        <Note_Testuali>Il cassonetto è di vetro, come il suo contenuto.</Note_Testuali>
+        <Note_Testuali>Motivazione: scoraggiare l'inserimento di riufiuti non di vetro</Note_Testuali>
+        <Note_Testuali>Non è stata una grande idea dato che è spesso in riparazione</Note_Testuali>
+        <Data_Posizionamento>2017-12-27</Data_Posizionamento>
+        <Ultimo_Svuotamento>
+            <Operatore>1</Operatore>
+            <Operatore>2</Operatore>
+            <Operatore>3</Operatore>
+            <Veicolo>0000002</Veicolo>
+            <Data_Ora>2017-12-27T00:00:00</Data_Ora>
+        </Ultimo_Svuotamento>
+        <Volume>3</Volume>
+    </Cassonetto>
+
+    <Cassonetto>
+        <ID>3</ID>
+        <Tipologia>Metallo</Tipologia>
+        <Indirizzo>
+            <Via>Risotto Nero</Via>
+            <Numero_Civico>10</Numero_Civico>
+        </Indirizzo>
+        <Coordinate_Geografiche>
+            <Latitudine>23.00</Latitudine>
+            <Longitudine>23.00</Longitudine>
+        </Coordinate_Geografiche>
+        <Note_Testuali>Il cassonetto ha dei fori di proiettile</Note_Testuali>
+        <Data_Posizionamento>2017-12-27</Data_Posizionamento>
+        <Ultimo_Svuotamento>
+            <Operatore>34</Operatore>
+            <Operatore>7</Operatore>
+            <Veicolo>00A0F01</Veicolo>
+            <Data_Ora>2017-12-27T00:00:00</Data_Ora>
+        </Ultimo_Svuotamento>
+        <Volume>2</Volume>
+    </Cassonetto>
+
+    <Cassonetto>
+        <ID>4</ID>
+        <Tipologia>Generico</Tipologia>
+        <Indirizzo>
+            <Via>Sconosciuta</Via>
+            <Numero_Civico>999</Numero_Civico>
+        </Indirizzo>
+        <Coordinate_Geografiche>
+            <Latitudine>0.01</Latitudine>
+            <Longitudine>999.00</Longitudine>
+        </Coordinate_Geografiche>
+        <Note_Testuali>Il cassonetto è in realtà un cristallo computazionale</Note_Testuali>
+        <Note_Testuali>Le coordinate sono false, la sua posizione non deve essere nota ai miner per nessuna ragione
+        </Note_Testuali>
+        <Data_Posizionamento>2017-12-27</Data_Posizionamento>
+        <Ultimo_Svuotamento>
+            <Operatore>51</Operatore>
+            <Operatore>52</Operatore>
+            <Operatore>53</Operatore>
+            <Operatore>54</Operatore>
+            <Operatore>55</Operatore>
+            <Operatore>56</Operatore>
+            <Operatore>57</Operatore>
+            <Operatore>58</Operatore>
+            <Operatore>59</Operatore>
+            <Operatore>70</Operatore>
+            <Veicolo>0000001</Veicolo>
+            <Veicolo>00000A7</Veicolo>
+            <Veicolo>0000003</Veicolo>
+            <Veicolo>0000002</Veicolo>
+            <Veicolo>F000001</Veicolo>
+            <Veicolo>F0000A7</Veicolo>
+            <Veicolo>F000003</Veicolo>
+            <Veicolo>F000002</Veicolo>
+            <Veicolo>BN00001</Veicolo>
+            <Veicolo>BN000A7</Veicolo>
+            <Veicolo>BN00003</Veicolo>
+            <Veicolo>BN00002</Veicolo>
+            <Data_Ora>2017-12-27T00:00:00</Data_Ora>
+        </Ultimo_Svuotamento>
+        <Volume>9</Volume>
+    </Cassonetto>
+
+    <Cassonetto>
+        <ID>5</ID>
+        <Tipologia>Generico</Tipologia>
+        <Indirizzo>
+            <Via>H4CK3D_bY_D4RK4NG3LCR4FTXDLOL</Via>
+            <Numero_Civico>666</Numero_Civico>
+        </Indirizzo>
+        <Coordinate_Geografiche>
+            <Latitudine>6.66</Latitudine>
+            <Longitudine>6.66</Longitudine>
+        </Coordinate_Geografiche>
+        <Note_Testuali>H4CK3D_bY_D4RK4NG3LCR4FTXDLOL</Note_Testuali>
+        <Data_Posizionamento>2017-12-27</Data_Posizionamento>
+        <Ultimo_Svuotamento>
+            <Operatore>666</Operatore>
+            <Veicolo>xx666xx</Veicolo>
+            <Data_Ora>2017-12-27T00:00:00</Data_Ora>
+        </Ultimo_Svuotamento>
+        <Volume>6</Volume>
+    </Cassonetto>
+
+</Cassonetti>

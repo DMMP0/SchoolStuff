@@ -1,0 +1,2 @@
+robot.WorldDevouringCalamity
+com.company.WorldDevouringCalamity

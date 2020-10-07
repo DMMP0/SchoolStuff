@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema
+           elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+    <xs:element name="Cassonetti">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Cassonetto" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ID">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:minExclusive value="0"></xs:minExclusive>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Tipologia" default="Generico" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Generico"></xs:enumeration>
+                                        <xs:enumeration value="Organico"></xs:enumeration>
+                                        <xs:enumeration value="Carta"></xs:enumeration>
+                                        <xs:enumeration value="Vetro"></xs:enumeration>
+                                        <xs:enumeration value="Metallo"></xs:enumeration>
+                                        <xs:enumeration value="Tessuti"></xs:enumeration>
+                                        <xs:enumeration value="generico"></xs:enumeration>
+                                        <xs:enumeration value="organico"></xs:enumeration>
+                                        <xs:enumeration value="carta"></xs:enumeration>
+                                        <xs:enumeration value="vetro"></xs:enumeration>
+                                        <xs:enumeration value="metallo"></xs:enumeration>
+                                        <xs:enumeration value="tessuti"></xs:enumeration>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Indirizzo" maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Via">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:maxLength value="30"></xs:maxLength>
+                                                    <xs:minLength value="2"></xs:minLength>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Numero_Civico">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:minExclusive value="0"></xs:minExclusive>
+                                                    <xs:maxExclusive value="1000"></xs:maxExclusive>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Coordinate_Geografiche" maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Latitudine">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:decimal"></xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Longitudine">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:decimal"></xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Note_Testuali" maxOccurs="5">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="0"></xs:minLength>
+                                        <xs:maxLength value="3000"></xs:maxLength>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Data_Posizionamento" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:date">
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Ultimo_Svuotamento" maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Operatore" minOccurs="1" maxOccurs="50" default="3">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:minLength value="1"></xs:minLength>
+                                                    <xs:maxLength value="10"></xs:maxLength>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Veicolo" minOccurs="1" maxOccurs="50" >
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:length value="7"></xs:length>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Data_Ora" maxOccurs="1" minOccurs="1">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:dateTime">
+
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Volume" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                        <xs:minExclusive value="0"></xs:minExclusive>
+                                        <xs:maxExclusive value="10"></xs:maxExclusive>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
