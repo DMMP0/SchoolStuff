@@ -1,0 +1,66 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Diagnostics;
+
+namespace ConsoleApplication9
+{
+    class CFib
+    {
+        public long[] pris;
+        
+
+
+        public CFib()
+        {
+            pris = new long[1];
+
+        }
+
+        public CFib(long n)
+        {
+            pris = new long[n+1];
+            pris[0] = 0;
+            pris[1] = 1;
+            pris[2] = 1;
+        }
+
+
+        public long calcFib(long n)
+        {
+            
+            if (n == 1 || n == 2)
+                return 1;
+            else
+            {
+                if (pris[n] == 0)
+                {
+                    pris[n] = calcFib(n - 1) + calcFib(n - 2);
+                    return pris[n];
+                }
+                else
+                    return pris[n];
+
+            }
+        }
+
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Stopwatch s = new Stopwatch();
+            
+            long n = 70;
+            CFib a = new CFib(n);
+            s.Start();
+            long ris = a.calcFib(n);
+            s.Stop();
+            Console.WriteLine("Il numero di fibonacci alla posizione {0} è {1}\n tempo totale : {2}",n,ris,s.Elapsed);
+            Console.Read();
+        }
+    }
+}
