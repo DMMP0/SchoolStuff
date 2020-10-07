@@ -1,0 +1,64 @@
+import random
+
+img = gimp.Image(800, 800, RGB)
+layer = gimp.Layer(img, "Test", 800, 800, RGBA_IMAGE, 100, NORMAL_MODE)
+img.add_layer(layer, -1)
+pdb.gimp_image_set_active_layer(img, layer)
+draw = pdb.gimp_image_get_active_drawable(img)
+
+gimp.pdb.gimp_context_set_brush_size(5.0)
+pdb.gimp_pencil(draw,2,[400,0])
+pdb.gimp_pencil(draw,2,[0,300])
+pdb.gimp_pencil(draw,2,[180,660])
+pdb.gimp_pencil(draw,2,[620,660])
+pdb.gimp_pencil(draw,2,[800,300])
+
+#non deve essere a distanza di uno, vengono due serp
+#intersecati
+
+def serSec(imm,curPx,curPy,p1x,p1y,p2x,p2y,p3x,p3y,p4x,p4y,p5x,p5y,i,buf) :
+   scelta = random.randrange(1,6)
+   if (buf-scelta)==-1 or (buf-scelta)==1 :
+      while (buf-scelta)==-1 or (buf-scelta)==1 :
+         scelta = random.randrange(1,6)
+   if scelta == 1 :
+     nextPx = int((p1x+curPx)/2)
+     nextPy = int((p1y+curPy)/2)
+   elif scelta == 2 :
+      nextPx = int((p2x+curPx)/2)
+      nextPy = int((p2y+curPy)/2)
+   elif scelta == 3 :
+      nextPx = int((p3x+curPx)/2)
+      nextPy = int((p3y+curPy)/2)
+   elif scelta == 4 :
+      nextPx = int((p4x+curPx)/2)
+      nextPy = int((p4y+curPy)/2)
+   elif scelta == 5 :
+     nextPx = int((p5x+curPx)/2)
+     nextPy = int((p5y+curPy)/2)
+   else :
+      print "error"
+   buf = scelta
+   pdb.gimp_pencil(draw,2,[nextPx,nextPy])
+   i = i + 1
+   if i < 100:
+     serSec(imm,nextPx,nextPy,p1x,p1y,p2x,p2y,p3x,p3y,p4x,p4y,p5x,p5y,i,buf)
+     
+i = 0
+buffer = 0
+curPx = 0
+curPy = 400
+j = 0
+while j < 100 :
+     j = j + 1
+     serSec(draw,curPx,curPy,400,0,0,300,180,660,620,660,800,300,i,buffer)
+     
+
+
+#i = i + 1
+#disp1 = gimp.Display(img)
+
+     
+disp1 = gimp.Display(img)
+
+ 

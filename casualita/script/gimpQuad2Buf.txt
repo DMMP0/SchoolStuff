@@ -1,0 +1,65 @@
+# non va
+#esce una diagonale
+
+import random
+
+img = gimp.Image(800, 800, RGB)
+layer = gimp.Layer(img, "Test", 800, 800, RGBA_IMAGE, 100, NORMAL_MODE)
+img.add_layer(layer, -1)
+pdb.gimp_image_set_active_layer(img, layer)
+draw = pdb.gimp_image_get_active_drawable(img)
+
+gimp.pdb.gimp_context_set_brush_size(5.0)
+pdb.gimp_pencil(draw,2,[0,0])
+pdb.gimp_pencil(draw,2,[0,800])
+pdb.gimp_pencil(draw,2,[800,800])
+pdb.gimp_pencil(draw,2,[800,0])
+
+#non deve essere a distanza di uno da una delle due precedenti scelte
+
+def serSec(imm,curPx,curPy,p1x,p1y,p2x,p2y,p3x,p3y,p4x,p4y,i,buf,volta) :
+   scelta = random.randrange(1,5)
+   
+   while (buf-scelta)==-1 or (buf-scelta)==1 or (buf-scelta)==3 or (buf-scelta)==-3:
+             scelta = random.randrange(1,5)
+   if scelta == 1 :
+       nextPx = int((p1x+curPx)/2)
+       nextPy = int((p1y+curPy)/2)
+   elif scelta == 2 :
+       nextPx = int((p2x+curPx)/2)
+       nextPy = int((p2y+curPy)/2)
+   elif scelta == 3 :
+       nextPx = int((p3x+curPx)/2)
+       nextPy = int((p3y+curPy)/2)
+   elif scelta == 4 :
+       nextPx = int((p4x+curPx)/2)
+       nextPy = int((p4y+curPy)/2)
+   else :
+     print "error"
+   if ( volta== 3) :
+     buf = scelta
+     volta = 1
+   pdb.gimp_pencil(draw,2,[nextPx,nextPy])
+   i = i + 1
+   volta = volta + 1
+   if i < 100 :
+     serSec(imm,nextPx,nextPy,p1x,p1y,p2x,p2y,p3x,p3y,p4x,p4y,i,buf1,volta)
+     
+v = 0    
+i = 0
+buffer1 = 0
+curPx = random.randrange(0,801)
+curPy = random.randrange(0,801)
+j = 0
+while j < 100 :
+     j = j + 1
+     serSec(draw,curPx,curPy,0,0,0,800,800,800,800,0,i,buffer1,v)
+     
+
+
+#i = i + 1
+#disp1 = gimp.Display(img)
+
+     
+disp1 = gimp.Display(img)
+ 

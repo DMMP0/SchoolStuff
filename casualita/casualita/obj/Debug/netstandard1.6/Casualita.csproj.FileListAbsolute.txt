@@ -1,0 +1,9 @@
+C:\Users\stud5aii\source\repos\Casualita\Casualita\bin\Debug\netstandard1.6\Casualita.deps.json
+C:\Users\stud5aii\source\repos\Casualita\Casualita\bin\Debug\netstandard1.6\Casualita.dll
+C:\Users\stud5aii\source\repos\Casualita\Casualita\bin\Debug\netstandard1.6\Casualita.pdb
+C:\Users\stud5aii\source\repos\Casualita\Casualita\obj\Debug\netstandard1.6\Casualita.csprojResolveAssemblyReference.cache
+C:\Users\stud5aii\source\repos\Casualita\Casualita\obj\Debug\netstandard1.6\Casualita.csproj.ResolveComReference.cache
+C:\Users\stud5aii\source\repos\Casualita\Casualita\obj\Debug\netstandard1.6\Casualita.csproj.CoreCompileInputs.cache
+C:\Users\stud5aii\source\repos\Casualita\Casualita\obj\Debug\netstandard1.6\Casualita.AssemblyInfo.cs
+C:\Users\stud5aii\source\repos\Casualita\Casualita\obj\Debug\netstandard1.6\Casualita.dll
+C:\Users\stud5aii\source\repos\Casualita\Casualita\obj\Debug\netstandard1.6\Casualita.pdb

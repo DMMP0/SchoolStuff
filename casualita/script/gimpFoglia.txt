@@ -1,0 +1,44 @@
+#non va
+
+import random
+
+img = gimp.Image(1000, 1000, RGB)
+layer = gimp.Layer(img, "Test", 1000, 1000, RGBA_IMAGE, 100, NORMAL_MODE)
+img.add_layer(layer, -1)
+pdb.gimp_image_set_active_layer(img, layer)
+draw = pdb.gimp_image_get_active_drawable(img)
+gimp.pdb.gimp_context_set_brush_size(5.0)
+
+def serSec(imm,curPx,curPy,i) :
+   scelta = random.randrange(1,101)
+   if scelta == 1 :
+     nextPx = 0
+     nextPy = 0.16*curPy
+   elif (scelta > 1) and (scelta < 9) :
+      nextPx = (0.20*curPx-0.26*curPy)
+      nextPy = (0.23*curPx+0.22*curPy+1.6)
+   elif (scelta >= 9) and ( scelta < 16) :
+      nextPx = (-0.15*curPx+0.28*curPy)
+      nextPy = (0.28*curPx+0.24*curPy+0.44)
+   elif (scelta >= 16) and (scelta <= 100) :
+      nextPx = (0.85*curPx+0.04*curPy)
+      nextPy = (-0.4*curPx+0.85*curPy+1.6)
+   else :
+      print "errore"
+      print scelta
+   pdb.gimp_pencil(draw,2,[nextPx,nextPy])
+   i = i + 1
+#   print("%d,%d"%(nextPx,nextPy) )
+   if i < 100:
+     serSec(imm,nextPx,nextPy,i)
+     
+i = 0
+curPx = 500
+curPy = 500
+j = 0
+while j < 100 :
+     j = j + 1
+     serSec(draw,curPx,curPy,i)
+     
+disp1 = gimp.Display(img)
+ 
