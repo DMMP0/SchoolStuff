@@ -16,8 +16,7 @@ pdb.gimp_pencil(draw,2,[800,300])
 
 def serSec(imm,curPx,curPy,p1x,p1y,p2x,p2y,p3x,p3y,p4x,p4y,p5x,p5y,i,buf) :
    scelta = random.randrange(1,6)
-   if scelta == buf :
-      while scelta == buf :
+   while scelta == buf :
            scelta = random.randrange(1,6)
    if scelta == 1 :
      nextPx = int((p1x+curPx)/2)
